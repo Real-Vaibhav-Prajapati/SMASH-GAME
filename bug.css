@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(0, 84, 21);
+    color: aliceblue;
+    background-size: cover;
+}
+#text {
+    color: rgb(255, 208, 0);
+}
+
+#board {
+    width: 540px;
+    height: 540px;
+    /* background-color: green; */
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    background: url("./background.png");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#board div {
+    /* board = 540 x 540, divide into 3x3 tiles --> 180 x 180 per div */
+    width: 180px; 
+    height: 180px;
+    background-image: url("./pipe.png");
+    background-size: cover;
+}
+
+#board div img {
+    width: 100px;
+    height: 100px;  
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.social-icon a{
+    width: 5px;
+    height: 5px; 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 2rem;
+    background: transparent;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+    color: greenyellow;
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease;
+    text-decoration: none;
+  
+  
+}
+
+.social-icon a:hover{
+    color: white;
+    background-color: greenyellow;
+    transform: scale(1.2)translateY(-5px);
+    box-shadow: 0 0 25px greenyellow;
+}
